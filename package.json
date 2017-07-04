@@ -2,9 +2,9 @@
   "name": "BabelNodeJs",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node server.js --presets es2015,stage-2"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/blizm87/BabelNodeJs/issues"
   },
-  "homepage": "https://github.com/blizm87/BabelNodeJs#readme"
+  "homepage": "https://github.com/blizm87/BabelNodeJs#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
+  }
 }
